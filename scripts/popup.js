@@ -3,7 +3,7 @@ const equalBuySellExchanges = ['koinex'];
 function refreshData() {
   chrome.storage.local.get('prices', function(data) {
     if (!chrome.runtime.error) {
-      console.log('Storage items', data);
+      // console.log('Storage items', data);
       updateLayout(data.prices);
 
       // setTimeout(refreshData, VIEW_REFRESH_INTERVAL);

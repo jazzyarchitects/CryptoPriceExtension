@@ -8,7 +8,7 @@ const fetchData = function() {
   fetch(URL)
     .then(response => response.json())
     .then(data => {
-      console.log(data);
+      // console.log(data);
       if (data && data !== 'null') {
         chrome.storage.local.set({ prices: data });
       }
