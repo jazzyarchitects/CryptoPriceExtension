@@ -1,0 +1,9 @@
+{
+  "name": "crypto-chrome-extension",
+  "version": "1.0.0",
+  "description": "A chrome extension to show prices of cryptocurrencies of some exchanges",
+  "main": "index.js",
+  "author": "Jibin Mathews<jibinmathews7@gmail.com>(http://jibinmathews.in)",
+  "license": "MIT",
+  "private": false
+}

@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "CryptoPricing",
+  "version": "1.0.0",
+  "description": "A chrome extension to show prices of cryptocurrencies of some exchanges",
+  "background": {
+    "persistent": true,
+    "scripts": ["scripts/background.js", "scripts/popup.js"]
+  },
+
+  "browser_action": {
+    "default_icon": {
+      "16": "images/icon128.png",
+      "48": "images/icon128.png",
+      "128": "images/icon128.png"
+    },
+    "default_title": "Crypto Prices",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "images/icon128.png",
+    "48": "images/icon128.png",
+    "128": "images/icon128.png"
+  },
+  "permissions": ["storage", "http://*/*", "https://*/*", "<all_urls>"],
+  "web_accessible_resources": []
+}
