@@ -47,9 +47,9 @@ function updateLayout(prices) {
       const priceField = document.getElementById(`${exchangeName.toLowerCase()}-${currencyName.toLowerCase()}`);
       if (priceField) {
         if (equalBuySellExchanges.includes(exchangeName)) {
-          priceField.innerHTML = `<b>₹</b> ${buyPrice}`;
+          priceField.innerHTML = `Rs. ${buyPrice}`;
         } else {
-          priceField.innerHTML = `Buy: <b>₹</b> ${buyPrice}<br />Sell: <b>₹</b> ${sellPrice}`;
+          priceField.innerHTML = `Buy: Rs. ${buyPrice}<br />Sell: Rs. ${sellPrice}`;
         }
       } else {
         console.log('Price field ', `${exchangeName.toLowerCase()}-${currencyName.toLowerCase()}`, 'does not exists');
